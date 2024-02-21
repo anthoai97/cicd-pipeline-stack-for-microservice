@@ -1,0 +1,8 @@
+# TODO
+1. Helm
+    - Create helm template (Version control)
+    - Deploy helm template script
+
+2. AgroCD
+    - Application
+    - Helm Microservice
