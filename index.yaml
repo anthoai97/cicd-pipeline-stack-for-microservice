@@ -14,6 +14,16 @@ entries:
   fe-ui:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2024-02-22T09:39:34.627563501Z"
+    description: A Helm chart for Kubernetes
+    digest: 9d8746754145d1fe8faa1fee5682395db1f7a77b012c87cdd3001317ddb7c279
+    name: fe-ui
+    type: application
+    urls:
+    - https://github.com/anthoai97/cicd-pipeline-stack-for-microservices/releases/download/fe-ui-0.0.4/fe-ui-0.0.4.tgz
+    version: 0.0.4
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2024-02-22T09:15:11.357053199Z"
     description: A Helm chart for Kubernetes
     digest: 082aaf582555367eb821d95370420af392c953b3fa2347894f26f2b0fb989954
@@ -22,4 +32,4 @@ entries:
     urls:
     - https://github.com/anthoai97/cicd-pipeline-stack-for-microservices/releases/download/fe-ui-0.0.3/fe-ui-0.0.3.tgz
     version: 0.0.3
-generated: "2024-02-22T09:15:11.357062626Z"
+generated: "2024-02-22T09:39:34.627571235Z"
