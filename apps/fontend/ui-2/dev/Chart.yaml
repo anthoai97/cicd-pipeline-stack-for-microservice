@@ -1,7 +1,7 @@
 apiVersion: v2
 appVersion: v1.0.0
 dependencies:
-  - alias: ui-2
+  - alias: app
     name: fe-ui
     repository: https://anthoai97.github.io/cicd-pipeline-stack-for-microservices
     version: 0.0.4

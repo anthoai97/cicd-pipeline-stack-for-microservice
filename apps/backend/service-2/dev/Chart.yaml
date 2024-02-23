@@ -1,7 +1,7 @@
 apiVersion: v2
 appVersion: v1.0.0
 dependencies:
-  - alias: service-2
+  - alias: app
     name: be-service
     repository: https://anthoai97.github.io/cicd-pipeline-stack-for-microservices
     version: 0.0.3
