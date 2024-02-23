@@ -7,8 +7,8 @@
     - Application
     - Helm Microservice
 
-argocd app create bootstrap-dev \
-   --repo https://github.com/myspotontheweb/argocd-workloads-demo.git \
+argocd app create gauvendi-dev \
+   --repo https://github.com/anthoai97/cicd-pipeline-stack-for-microservices.git \
    --path argocd/dev \
    --dest-namespace argocd \
    --dest-server https://kubernetes.default.svc \

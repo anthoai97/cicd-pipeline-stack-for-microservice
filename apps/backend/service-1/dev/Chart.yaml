@@ -1,11 +1,11 @@
 apiVersion: v2
 appVersion: v1.0.0
 dependencies:
-  - alias: backend-service-1
+  - alias: service-1
     name: be-service
     repository: https://anthoai97.github.io/cicd-pipeline-stack-for-microservices
     version: 0.0.3
 description: A Helm chart for Spring Boot demo application
-name: backend-service-1
+name: service-1
 type: application
 version: "1.16.0"
