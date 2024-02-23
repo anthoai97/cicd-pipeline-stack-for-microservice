@@ -6,6 +6,6 @@ dependencies:
     repository: https://anthoai97.github.io/cicd-pipeline-stack-for-microservices
     version: 0.0.4
 description: A Helm chart for Spring Boot demo application
-name: sui-1
+name: ui-1
 type: application
 version: "1.16.0"
