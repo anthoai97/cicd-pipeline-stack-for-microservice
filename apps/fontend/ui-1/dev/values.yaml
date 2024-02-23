@@ -3,6 +3,7 @@
 # Declare variables to be passed into your templates.
 app:
   replicaCount: 1
+  nameOverride: "ui-1"
 
   image:
     repository: nginx
@@ -11,7 +12,6 @@ app:
     tag: ""
 
   imagePullSecrets: []
-  nameOverride: ""
   fullnameOverride: ""
 
   serviceAccount:
