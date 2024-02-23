@@ -9,7 +9,7 @@ spec:
       repoURL: https://github.com/anthoai97/cicd-pipeline-stack-for-microservices.git
       revision: HEAD
       directories:
-      - path: apps/*/dev
+      - path: apps/*/*/dev
   template:
     metadata:
       name: '{{path[1]}}'
@@ -23,7 +23,6 @@ spec:
         server: https://kubernetes.default.svc
         namespace: '{{path[1]}}'
       syncPolicy:
-        applicationsSync: create-update
         automated:
           prune: true
           selfHeal: true
