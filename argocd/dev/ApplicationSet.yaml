@@ -12,7 +12,7 @@ spec:
       - path: apps/*/*/dev
   template:
     metadata:
-      name: '{{path[1]}}'
+      name: '{{path[2]}}'
     spec:
       project: "dev"
       source:
@@ -21,7 +21,7 @@ spec:
         path: '{{path}}'
       destination:
         server: https://kubernetes.default.svc
-        namespace: '{{path[1]}}'
+        namespace: '{{path[2]}}'
       syncPolicy:
         automated:
           prune: true
