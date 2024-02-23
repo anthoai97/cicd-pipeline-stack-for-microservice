@@ -1,0 +1,30 @@
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: dev
+  namespace: argocd
+spec:
+  generators:
+  - git:
+      repoURL: https://github.com/anthoai97/cicd-pipeline-stack-for-microservices.git
+      revision: HEAD
+      directories:
+      - path: apps/*/dev
+  template:
+    metadata:
+      name: '{{path[1]}}-dev'
+    spec:
+      project: "dev"
+      source:
+        repoURL: https://github.com/anthoai97/cicd-pipeline-stack-for-microservices.git
+        targetRevision: HEAD
+        path: '{{path}}'
+      destination:
+        server: https://kubernetes.default.svc
+        namespace: '{{path[1]}}-dev'
+      syncPolicy:
+        automated:
+          prune: true
+          selfHeal: true
+        syncOptions:
+        - CreateNamespace=true

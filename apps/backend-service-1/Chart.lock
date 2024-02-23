@@ -1,6 +1,0 @@
-dependencies:
-- name: be-service
-  repository: https://anthoai97.github.io/cicd-pipeline-stack-for-microservices
-  version: 0.0.3
-digest: sha256:e7e1cd68823f52e8ae3cf7ec565278dea4f897970889a61f3f8c8d77067c1959
-generated: "2024-02-22T16:54:38.885052+07:00"
